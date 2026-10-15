@@ -535,11 +535,13 @@ Widget build(BuildContext context) {
 
 > ✅ **Checkpoint 4.1** ถ่ายภาพหน้าจอ 3 ภาพเรียงกัน คือ (ก) แอปตอนเพิ่งเปิดขึ้นมาครั้งแรกแบบยังไม่ล็อกอิน แสดงหน้า Login (ข) หลังล็อกอินสำเร็จ แอปสลับไปแสดง `MainScaffold` อัตโนมัติโดยไม่ต้องกดอะไรเพิ่ม และ (ค) หลังกด "ออกจากระบบ" แอปสลับกลับไปหน้า Login เอง อธิบายว่าทำไมการใช้ `StreamBuilder` ฟัง `authStateChanges()` จึงทำให้ไม่ต้องเขียนโค้ดสั่ง Navigate ไปมาเอง
 
+<img width="1080" height="2408" alt="Screenshot_20261015_211047" src="https://github.com/user-attachments/assets/4a0d855c-fb11-4b6a-98cc-baa01070bc53" />
+<img width="1080" height="2408" alt="Screenshot_20261015_211144" src="https://github.com/user-attachments/assets/40528253-57e0-47c2-900d-55b2c1558014" />
+<img width="1080" height="2408" alt="Screenshot_20261015_211154" src="https://github.com/user-attachments/assets/1107b466-8c3a-4f35-9d33-c04865041818" />
 
-```text
-บันทึกรูปผลลัพธ์ที่นี่ (3 ภาพ) และคำอธิบาย
 ```
-
+ตัวแอปสลับหน้าจอจากการเช็กสถานะผู้ใช้ ณ ปัจจุบันโดยตรง จึงไม่จำเป็นต้องเขียนโค้ดสั่ง Navigator.push หรือ Navigator.pop เพื่อย้ายหน้าไปมาเอง
+```
 ---
 
 ## ส่วนที่ 5: ขยาย Repository Pattern ด้วย ItemRepositoryFirestore
