@@ -392,7 +392,14 @@ avdmanager list avd
 
 <img width="1080" height="2408" alt="Screenshot_20261015_210211_Google Play services" src="https://github.com/user-attachments/assets/e6ee6551-d37e-400f-9117-4ad3c5e7f95e" />
 
-
+```
+Google idToken  ──► พิสูจน์ว่า "คุณคือ Google User คนนี้จริง"
+accessToken     ──► พิสูจน์ว่า "คุณได้รับอนุญาตจาก Google แล้ว"
+                         ↓ ทั้งสองรวมกัน
+              Firebase ออก Firebase Session ให้
+              → authStateChanges() emit User ใหม่
+              → AuthGate เปลี่ยนหน้าไป MainScaffold
+```
 ---
 
 ## ส่วนที่ 4: AuthGate — สลับหน้าจอตามสถานะผู้ใช้
